@@ -11,7 +11,7 @@ fernet = Fernet(key)
 with open('my-file.txt', 'rb') as encrypted_file:
     encrypted = encrypted_file.read()
 
-decrypted = fernet.decrypt(encrypted_file)
+decrypted = fernet.decrypt(encrypted)
 
 #opening the file in write mode and writting the decrypted data
 with open('my-file.txt', 'wb') as decrypted_file:
